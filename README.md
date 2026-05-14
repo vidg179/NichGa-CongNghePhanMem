@@ -1,2 +1,2 @@
-# N-ch-Ga---C-ng-ngh-ph-n-m-m
+#NichGa-CongNghePhanMem
 Dự Án CNPM
