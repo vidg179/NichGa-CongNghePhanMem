@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router";
 import { 
   Trash2, Minus, Plus, ShoppingBag, ArrowRight, CreditCard, Coffee, 
   Check, QrCode, Phone, User, FileText, Ticket, Percent, 
-  MapPin, CheckCircle2, ChevronRight, AlertCircle, Copy, Printer, Download 
+  MapPin, CheckCircle2, ChevronRight, AlertCircle, Copy, Printer, Download, Smartphone 
 } from "lucide-react";
 import { useCart } from "../../context/CartContext";
 import confetti from "canvas-confetti";

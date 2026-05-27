@@ -1,6 +1,7 @@
-import { createBrowserRouter, redirect } from "react-router";
+import { createBrowserRouter } from "react-router";
 
 import CustomerLayout from "./layouts/CustomerLayout";
+import HomePage from "./pages/customer/HomePage";
 import Menu from "./pages/customer/Menu";
 import ProductDetail from "./pages/customer/ProductDetail";
 import Cart from "./pages/customer/Cart";
@@ -21,12 +22,9 @@ import Predictions from "./pages/Predictions";
 export const router = createBrowserRouter([
   {
     path: "/",
-    loader: () => redirect("/menu"), // Redirect root to menu for customers
-  },
-  {
-    path: "/",
     Component: CustomerLayout,
     children: [
+      { index: true, Component: HomePage },
       { path: "menu", Component: Menu },
       { path: "product/:id", Component: ProductDetail },
       { path: "cart", Component: Cart },
